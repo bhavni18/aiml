@@ -1,0 +1,108 @@
+1.Write a program to subtarct two complex numbers:
+print("Subtraction of two complex numbers : ",(5+2j)-(3-8j))
+output:
+2+10j
+2.wriyte a program to find fourth root of a number
+from math import sqrt
+print sqrt(4)
+3.write a program to swap two mumners using tempoarry varibale
+x = 7
+y = 9
+
+temp = x
+x = y
+y = temp
+
+print('The value of x after swapping: {}'.format(x))
+print('The value of y after swapping: {}'.format(y))
+output:
+The value of x after swapping: 9
+The value of y after swapping: 7
+
+4,Write a program to swap two numbers in Python without using a temporary variable.
+x = 9
+y = 7
+   
+
+x = x + y   
+  
+
+y = x - y  
+   
+x = x - y   
+print("After Swapping: x =", x, " y =", y); 
+  
+ 
+Output :
+
+After Swapping: x = 9, y = 7
+
+5.Write a program to convert Fahrenheit to kelvin and celsius both.
+celsius = float(input("Enter temperature in celsius: "))
+fahrenheit = (celsius * 9/5) + 32
+print('%.2f Celsius is: %0.2f Fahrenheit' %(celsius, fahrenheit))
+
+ouput:
+enter temperature in celsius:37
+37.00 celsius is:98.60 farenheit
+
+
+fahrenheit = float(input("Enter temperature in fahrenheit: "))
+celsius = (fahrenheit - 32) * 5/9
+print('%.2f Fahrenheit is: %0.2f Celsius' %(fahrenheit, celsius))
+output:
+enter temperature in farenheit:99
+99.00 farenheit is:37.22 celsius
+
+6.Write a program to demonstrate all the available data types in Python. Hint: Use type() function.
+x = "Hello World"
+print(x)
+print(type(x)) 
+output:Hello World
+<class 'str'>
+
+x = ["apple", "banana", "cherry"]
+print(x)
+print(type(x)) 
+output:['apple', 'banana', 'cherry']
+<class 'list'>
+
+x = ("apple", "banana", "cherry")
+print(x)
+print(type(x)) 
+output:('apple', 'banana', 'cherry')
+<class 'tuple'>
+
+x = True
+print(x)
+print(type(x))
+outut:True
+<class 'bool'>
+
+x = 20
+print(x)
+print(type(x))
+output:20
+<class 'int'>
+
+x = {"apple", "banana", "cherry"}
+print(x)
+print(type(x)) 
+output:{'cherry', 'apple', 'banana'}
+<class 'set'>
+
+x = {"name" : "John", "age" : 36}
+print(x)
+print(type(x)) 
+output:{'name': 'John', 'age': 36}
+<class 'dict'>
+
+x = 20.5
+print(x)
+print(type(x))
+output:20.5
+<class 'float'>
+
+
+
+
