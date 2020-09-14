@@ -1,0 +1,69 @@
+1.To add two complex numbers:
+
+print("addition of two complex numbers : ",(5+2j)+(3-8j))
+output:
+8-10j
+
+to subtarct two complex numbers:
+print("Subtraction of two complex numbers : ",(5+2j)-(3-8j))
+output:
+2+10j
+to multiply
+print("Multiplication of two complex numbers : ",(4+3j)*(3-7j))
+output:Multiplication of two complex numbers :  (33-19j)  
+to didve
+print("Division of two complex numbers : ",(4+3j)/(3-7j))
+output:Division of two complex numbers :  (-0.15517241379310348+0.6379310344827587j)
+
+floor division is not possble
+
+modulus operation:
+print (abs(3 + 4j)) 
+output:5.0 
+
+2.Research on range() functions and its parameters. Create a markdown cell and write in your own words
+(no copy-paste from google please) what you understand about it. Implement a small program of your
+choice on the same.
+
+range() function syntax is rane(start,stop,step)
+start argument is starting number lower limit,it takes zero if not specified
+stop argument is upper limit,it doesnt take this number
+step argument is difference between each number in the list.
+for i in range(5):
+    print(i, end=', ')
+output:0, 1, 2, 3, 4
+
+3.Consider two numbers. Perform their subtraction and if the result of subtraction is greater than 25, print
+their multiplication result else print their division result.
+
+num1 = int(input("Enter First Number: "))
+num2 = int(input("Enter Second Number: "))
+result=num1-num2
+print(num1, "-", num2, "=", result)
+if result>25:
+  result=num1*num2
+  print(num1, "*", num2, "=", result)
+elif result<25:
+  result=num1/num2:
+  print(num1, "-", num2, "=", result)
+else:
+  print("nit defined")
+4.Consider a list of 10 elements of integer values. If the number in the list is divisible by 2, print the result as
+"square of that number minus 2".
+
+list=[1,2,3,4,5,6,7,8,9,10]
+for i in list:
+  if i%2==0:
+   result=(i*i)-2
+   print ("result")
+   
+   
+  5.Consider a list of 10 elements. Print all the elements in the list which are greater than 7 when that number
+is divided 2.
+
+list=[1,2,3,4,5,6,7,8,9,10]
+ for i in list:
+  if i>7:
+   print(all(i>7 for i/2))
+ 
+
