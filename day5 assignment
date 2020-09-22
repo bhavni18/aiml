@@ -1,0 +1,179 @@
+1.Write a Python program to find the first 20 non-even prime natural numbers.
+
+r=20  
+for a in range(2,r+1):  
+    k=0  
+    for i in range(2,a//2+1):  
+        if(a%i==0):  
+            k=k+1  
+    if(k<=0):  
+        print(a,end=" ")  
+Output:
+
+2,3,5,7,11,13,17,19
+
+2.Write a Python program to implement 15 functions of string.
+
+def main():
+    print('\n########################################################\n')
+ 
+    user_string = "China"
+    if user_string.isalnum():
+        print(user_string, ': The String is alphanumeric.\n')
+ 
+    user_string = "1974"
+    if user_string.isdigit():
+        print(user_string, ': The String contains only digits.\n')
+ 
+    user_string = "Australia"
+    if user_string.isalpha():
+        print(user_string, ': String contains only alphabetic characters.\n')
+ 
+    user_string = "   "
+    if user_string.isspace():
+        print(user_string, ': String contains only whitespace characters.\n')
+ 
+    user_string = "JAPAN"
+    if user_string.isupper():
+        print(user_string, ': All letters in the string are uppercase.\n')
+ 
+    user_string = "Australia 1974"
+    if user_string.islower():
+        print(user_string, ': All letters in the string are lowercase.\n')
+ 
+    user_string = "India 1974"
+    toLower = user_string.lower()
+    print(user_string, ': Convert String in lowercase:', toLower, '\n')
+ 
+    toUpper = user_string.upper()
+    print(user_string, ': Convert String in uppercase:', toUpper, '\n')
+ 
+    
+    user_string = "   India 1974"
+    print('\nLeft Strip:', user_string.lstrip())
+ 
+   
+    user_string = "America 1974"
+    print('\nLeft Strip with Character A:', user_string.lstrip('A'))
+ 
+    
+    user_string = "America 1974     "
+    print('\nRight Strip:', user_string.rstrip('A'))
+ 
+    
+    user_string = "America"
+    print('\nRight Strip with Character a:', user_string.rstrip('a'))
+ 
+    
+    user_string = "   America 1974    "
+    print('\nStrip from both side :', user_string.strip())
+ 
+    
+    user_string = "America Russia Japan China"
+    print('\nStrip with Character A:', user_string.strip('A'))
+    print('Strip with Character a:', user_string.strip('a'))
+ 
+    
+    print('\nendswith check whether a string ends with a specified substring')
+    user_string = "Columbia"
+    print(user_string.endswith('bia'))
+    print(user_string.endswith('mia'))
+ 
+    
+    print('\nstartswith check if a string starts with a specified substring')
+    user_string = "Columbia"
+    print(user_string.startswith('Colum'))
+    print(user_string.startswith('Rolum'))
+ 
+    
+    print('\n################## Find Method ##################')
+    user_string = "Columbia"
+    print(user_string.find('lumbia'))
+    print(user_string.find('colbia'))
+    print(user_string.find('bia'))
+    print(user_string.find('col'))
+    print(user_string.find('Col'))
+ 
+    
+    print('\n################## Replace Method ##################')
+    user_string = "Hello Columbia"
+    old = "Columbia"
+    new = "Russia"
+    print(user_string.replace(old, new))
+ 
+main()
+ output :
+
+########################################################
+
+China : The String is alphanumeric.
+
+1974 : The String contains only digits.
+
+Australia : The String contains only alphabetic characters.
+
+: The String contains only whitespace characters.
+
+JAPAN : All letters in the string are uppercase.
+
+India 1974 : Convert String in lowercase: india 1974
+
+India 1974 : Convert String in uppercase: INDIA 1974
+
+
+Left Strip: India 1974
+
+Left Strip with Character A: merica 1974
+
+Right Strip: America 1974
+
+Right Strip with Character a: Americ
+
+Strip from both side : America 1974
+
+Strip with Character A: merica Russia Japan China
+Strip with Character a: America Russia Japan Chin
+
+endswith check whether a string ends with a specified substring
+True
+False
+
+startswith check if a string starts with a specified substring
+True
+False
+
+################## Find Method ##################
+2
+-1
+5
+-1
+0
+
+################## Replace Method ##################
+Hello Russia
+
+3.Write a Python program to check if the given string is a Palindrome or Anagram or None of them. Display
+the message accordingly to the user.
+
+string = input(“Enter the string:”)
+if(string == string[::-1]):
+print(“The string is a palindrome”)
+else:
+print(“The string is not a palindrome”)
+
+4.Write a Python's user-defined function that removes all the additional characters from the string and
+convert it finally to lower case using built-in lower(). eg: If the string is "Dr. Darshan Ingle @AIML Trainer",
+then the output be "drdarshaningleaimltrainer".
+
+bad_chars = ['.', '@'] 
+string = "Dr. Darshan Ingle @AIML Trainer"
+for i in bad_chars : 
+    string = string.replace(i, '') 
+    print ("Resultant list is : " + str(string))
+    
+    print(string.lower())
+    
+    ouput:
+    "Dr Darshan Ingle AIML Trainer",
+    drdarshaningleaimltrainer
+
